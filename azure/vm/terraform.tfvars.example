@@ -1,0 +1,26 @@
+# Example terraform.tfvars file
+# Copy this file to terraform.tfvars and fill in your values
+
+prefix         = "azvm"
+location       = "Southeast Asia"
+admin_username = "azureuser"
+
+# Generate SSH key with: ssh-keygen -t rsa -b 4096
+ssh_public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQD... your-email@example.com"
+
+# Optional: Customize VM size
+# vm_size = "Standard_B2s"
+
+# Optional: Customize OS disk size (GB)
+# os_disk_size_gb = 30
+
+# Optional: Restrict SSH access to specific IPs
+# allowed_ssh_source_ips = ["203.0.113.0/24", "198.51.100.42/32"]
+
+# Optional: Add custom tags
+# tags = {
+#   Environment = "Development"
+#   Project     = "MyProject"
+#   Owner       = "TeamName"
+#   ManagedBy   = "OpenTofu"
+# }
